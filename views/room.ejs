@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <meta name="og:title" content='Join the people in "<%-room%>"<% if(name !== undefined) { %> as "<%-name%>"<% } %>'>
+        <meta name="og:description" content="Socketer is an realtime chat that allows you to interact with other people, grouped in rooms!">
+        <%- include("partial/meta"); %>
+
+        <link rel="stylesheet" href="/static/common/style.css">
+        <link rel="stylesheet" href="/static/room/style.css">
+        <link rel="icon" href="/static/common/favicon.svg">
+
+        <script>
+            const ROOM = "<%-room%>";
+            const NAME = "<%-name%>";
+        </script>
+
+        <script src="/static/common/events.js" defer></script>
+        <script src="/socket.io/socket.io.min.js" defer></script>
+        <script type="module" src="/static/room/main.js" defer></script>
+
+        <title>SOCKETER · Room</title>
+    </head>
+    <body>
+        <div id="splash">
+            <i class="load-dot" style="--d: 0"></i>
+            <i class="load-dot" style="--d: 1"></i>
+            <i class="load-dot" style="--d: 2"></i>
+            <i class="load-dot" style="--d: 3"></i>
+        </div>
+        <div class="sidebar">
+            <label for="typing">typing - 0</label>
+            <div id="typing"></div>
+            <label for="joined">joined - 0</label>
+            <div id="joined"></div>
+        </div>
+        <div class="main">
+            <div id="chat"></div>
+            <div id="form">
+                <input id="input" type="text" placeholder="Send something...">
+                <p id="lrem"></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    justify-content: center;
+    align-items: center;
+
+    background: url("/static/common/bg.jpg") no-repeat center;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.window {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 2rem var(--shadow);
+
+    background: var(--primary);
+    padding: 3rem;
+
+    width: 40rem;
+    max-width: 100%;
+}
+
+.window > * {
+    margin-bottom: 1.5rem;
+}
+
+.window > *:last-child {
+    margin-bottom: 0;
+}
+
+.title {
+    text-align: center;
+    color: var(--secondary);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    padding: 0.8rem;
+    background: #00000022;
+    border: 0.1rem solid #00000033;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    align-items: center;
+    transition: border-color 200ms;
+}
+
+.input:hover {
+    border-color: #00000088;
+}
+
+.input:focus-within {
+    border-color: var(--theme);
+}
+
+.input input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--secondary);
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.input p {
+    width: 2ch;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    color: var(--secondary);
+}
+
+#join {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    color: var(--secondary);
+    background: var(--theme);
+    text-transform: uppercase;
+    transition: box-shadow 200ms, filter 200ms;
+}
+
+#join:hover, body[input-type="tab"] #join:focus {
+    box-shadow: 0 0 0.6rem var(--theme-s);
+}
+
+#join:active:hover {
+    box-shadow: 0 0 1rem var(--theme-s);
+    filter: brightness(0.8);
+}

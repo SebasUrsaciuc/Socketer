@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <% if(!isNaN(refresh)) { %>
+            <meta http-equiv="refresh" content="<%-refresh%>">
+        <% } %>
+
+        <link rel="stylesheet" href="/static/common/style.css">
+        <link rel="stylesheet" href="/static/widget/style.css">
+        <link rel="icon" href="/static/common/favicon.svg">
+
+        <title>SOCKETER · Widget</title>
+    </head>
+    <body>
+        <div class="frame">
+            <div class="navbar">
+                <h1 class="to-home">Socketer</h1>
+                <span class="space"></span>
+                <p class="online"><b><%=users.length%></b> User<%=users.length === 1? "" : "s"%> Joined</p>
+            </div>
+            <div class="content">
+                <% if(users.length > 0) { %>
+                    <label>users joined in <%=room%></label>
+                <% } else { %>
+                    <label>nobody joined in <%=room%></label>
+                <% } %>
+                <% for(const user of users) { %>
+                <p><%=user%></p>
+                <% } %>
+            </div>
+        </div>
+    </body>
+</html>

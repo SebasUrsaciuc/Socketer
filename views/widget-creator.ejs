@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="og:title" content="Create a Socketer Widget">
+        <meta name="og:description" content="Create the ideal widget to include in your website! The best way to show the activity in one room.">
+        <%- include("partial/meta"); %>
+
+        <link rel="stylesheet" href="/static/common/style.css">
+        <link rel="stylesheet" href="/static/widget-creator/style.css">
+        <link rel="icon" href="/static/common/favicon.svg">
+
+        <script src="/static/common/events.js" defer></script>
+        <script type="module" src="/static/widget-creator/main.js" defer></script>
+
+        <title>SOCKETER · Widget Creator</title>
+    </head>
+    <body>
+        <div class="window">
+            <p class="title">Create your widget!</p>
+
+            <label>room</label>
+            <div id="room" class="input">
+                <input type="text">
+                <p></p>
+            </div>
+
+            <label>refresh time</label>
+            <div id="refresh" class="input">
+                <input class="number" type="text" min="30">
+            </div>
+
+            <div class="wh">
+                <div>
+                    <label>width</label>
+                    <div id="width" class="input">
+                        <input class="number" type="text" min="300">
+                    </div>
+                </div>
+
+                <div>
+                    <label>height</label>
+                    <div id="height" class="input">
+                        <input class="number" type="text" min="300">
+                    </div>
+                </div>
+            </div>
+
+            <div id="result">
+                <label>result</label>
+                <div id="height" class="input" tabindex="0"></div>
+            </div>
+        </div>
+    </body>
+</html>

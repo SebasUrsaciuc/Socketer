@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <meta name="og:title" content="Join a Room">
+        <meta name="og:description" content="Join and make new experiences, interact with new people, grouped in rooms!">
+        <%- include("partial/meta"); %>
+
+        <link rel="stylesheet" href="/static/common/style.css">
+        <link rel="stylesheet" href="/static/join/style.css">
+        <link rel="icon" href="/static/common/favicon.svg">
+
+        <script src="/static/common/events.js" defer></script>
+        <script type="module" src="/static/join/main.js" defer></script>
+
+        <title>SOCKETER · Join</title>
+    </head>
+    <body>
+        <div class="window">
+            <p class="title">Welcome!</p>
+
+            <label>name</label>
+            <div id="name" class="input">
+                <input type="text">
+                <p></p>
+            </div>
+            <label>room</label>
+            <div id="room" class="input">
+                <input type="text">
+                <p></p>
+            </div>
+            <button id="join">join</button>
+        </div>
+    </body>
+</html>

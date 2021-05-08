@@ -1,0 +1,56 @@
+:root {
+    background: transparent;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    background: #202020;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background: var(--theme); /* #FE346C */
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar .space {
+    flex: 1;
+}
+
+.navbar .to-home {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.navbar .online {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+.content {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: scroll;
+    background: url("/static/common/minimal.svg") no-repeat center;
+    background-size: 50% 80%;
+}
+
+.content p {
+    font-size: 1.6rem;
+    color: var(--secondary);
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+    background: transparent;
+}
