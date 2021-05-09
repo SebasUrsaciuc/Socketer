@@ -28,7 +28,7 @@ app.get("/join", (req, res) => {
 });
 
 app.get("/rooms/", (req, res) => {
-    res.redirect("/");
+    res.redirect("/join");
 });
 
 app.get("/rooms/:room", (req, res) => {
