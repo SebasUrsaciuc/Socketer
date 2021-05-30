@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 
 
 // PAGES
-app.get("/:path(index)?", (req, res) => {
+app.get(["/", "/index"], (req, res) => {
     res.redirect("/join");
 });
 
