@@ -14,7 +14,7 @@ Is a project that allowed me to grow and strengthen my knowledge in [Express][ex
 Obviously the logo and the name are tributes to the [socket.io][socket.io] library, witch allowed me to easily implement a stable handshake connection between client and server.
 
 ## Can I reuse it?
-Of course, you can! The project is under MIT licence, you are free to reuse the code as you want!
+Of course, you can! The project is under MIT license, you are free to reuse the code as you want!
 
 [discord]: https://discord.com/
 [telegram]: https://telegram.org/
