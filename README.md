@@ -16,7 +16,7 @@ Obviously the logo and the name are tributes to the [socket.io][socket.io] libra
 ## Can I reuse it?
 Of course, you can! The project is under MIT license, you are free to reuse the code as you want!
 
-## How I start the thing?
+## How I run the thing?
 Obviusly you need to have [Node JS][node.js] and [NPM][npm] installed.
 After you downloaded the source and opened an terminal in the source folder, you can execute the following commands:
 
@@ -24,7 +24,7 @@ $ `npm intall` - to install all the dependencies. <br>
 $ `npm audit fix` - to fix vulnerabilities. <br>
 $ `node .` - to start it.
 
-And voila! The nodejs application will be hosted at http://localhost:3000/.
+And voila! The [Node JS][node.js] application will be hosted at http://localhost:3000/.
 
 [discord]: https://discord.com/
 [telegram]: https://telegram.org/
